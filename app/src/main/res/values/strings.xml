@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ICT2105_Prototype</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="charity">Charity</string>
+    <string name="back">Back</string>
+    <string name="title_home">Home</string>
+    <string name="title_category">Category</string>
+    <string name="title_donate">Donate</string>
+    <string name="title_organization">Organization</string>
+    <string name="title_me">Me</string>
+    <string name="title_activity_home">HomeActivity</string>
+</resources>
