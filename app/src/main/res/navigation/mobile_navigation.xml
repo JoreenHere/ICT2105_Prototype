@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/navigation_category"
-        android:name="com.ict2105.ict2105_prototype.ui.home.HomeFragment"
+        android:name="com.ict2105.ict2105_prototype.ui.category.CategoryFragment"
         android:label="@string/title_category"
         tools:layout="@layout/fragment_home" />
 

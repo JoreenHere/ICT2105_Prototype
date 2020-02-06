@@ -5,6 +5,7 @@
     <color name="colorAccent">#D81B60</color>
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-    <color name="pink">#CC0066</color>
+    <color name="pink">#ff4da6</color>
     <color name="onSurface">#60000000</color>
+    <color name="light_gray">#E6E6E6</color>
 </resources>
