@@ -9,6 +9,9 @@ class CategoryViewModel : ViewModel() {
     private val _text = MutableLiveData<String>().apply {
         value = "This is home Fragmentsssssss"
     }
+    private val _text1 = MutableLiveData<String>().apply {
+        value = "BOOKS"
+    }
     val text: LiveData<String> = _text
 
 }

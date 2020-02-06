@@ -51,6 +51,11 @@
                     android:paddingTop="40dp"
                     android:text="356 Tanglin Rd \nOpening hour: 10AM - 6PM \nH:6718 2506" />
 
+                <com.google.android.gms.maps.MapView
+                    android:id="@+id/mapView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
