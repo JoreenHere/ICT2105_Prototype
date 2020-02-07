@@ -7,15 +7,15 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.ict2105.ict2105_prototype.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:name="com.ict2105.ict2105_prototype.ui.Browse.HomeFragment"
+        android:label="@string/title_browse"
+        tools:layout="@layout/fragment_browse" />
 
     <fragment
         android:id="@+id/navigation_category"
         android:name="com.ict2105.ict2105_prototype.ui.category.CategoryFragment"
         android:label="@string/title_category"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_category" />
 
     <fragment
         android:id="@+id/navigation_organization"

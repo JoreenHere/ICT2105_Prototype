@@ -1,18 +1,14 @@
-package com.ict2105.ict2105_prototype.ui.home
+package com.ict2105.ict2105_prototype.ui.Browse
 
-import android.content.Context
-import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.ict2105.ict2105_prototype.ItemListAdapter
 import com.ict2105.ict2105_prototype.R
-import kotlinx.android.synthetic.main.fragment_home.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -34,7 +30,7 @@ class HomeFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        val rootView: View = inflater.inflate(R.layout.fragment_home, container, false)
+        val rootView: View = inflater.inflate(R.layout.fragment_browse, container, false)
 
         itemList.add("Assorted T-shirts")
         itemList.add("Assorted T-shirts")

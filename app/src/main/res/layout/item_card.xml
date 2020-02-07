@@ -8,6 +8,7 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:minHeight="200sp"
         card_view:cardCornerRadius="6dp"
         card_view:cardElevation="3dp"
         card_view:cardUseCompatPadding="true">
@@ -28,7 +29,8 @@
             <TextView
                 android:id="@+id/textViewItemName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="textview"/>
 
         </LinearLayout>
 
