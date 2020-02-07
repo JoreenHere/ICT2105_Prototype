@@ -3,6 +3,7 @@ package com.ict2105.ict2105_prototype
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Toast
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -22,7 +23,7 @@ class HomeActivity : AppCompatActivity() {
 
 //        val toolbar: Toolbar = findViewById(R.id.toolbar)
 //        setSupportActionBar(toolbar)
-        supportActionBar?.setDisplayShowTitleEnabled(false)
+//        supportActionBar?.setDisplayShowTitleEnabled(false)
 
         val fbtnAddListing: FloatingActionButton = findViewById(R.id.fbtnAddListing)
 
@@ -57,11 +58,10 @@ class HomeActivity : AppCompatActivity() {
         // Handle action bar item clicks here.
         val id = item.getItemId()
 
-        if (id == R.id.action_one) {
+        if (id == R.id.action_chat) {
             Toast.makeText(this, "Item One Clicked", Toast.LENGTH_LONG).show()
             return true
         }
-
         return super.onOptionsItemSelected(item)
 
     }

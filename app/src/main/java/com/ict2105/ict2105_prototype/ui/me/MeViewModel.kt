@@ -13,7 +13,7 @@ class MeViewModel : ViewModel() {
     val text: LiveData<String> = _text
 
     private val _text1 = MutableLiveData<String>().apply {
-        value = "UserName"
+        value = "Username"
     }
     val text1: LiveData<String> = _text1
 

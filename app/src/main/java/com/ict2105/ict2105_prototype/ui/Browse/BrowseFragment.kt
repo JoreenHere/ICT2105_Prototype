@@ -30,7 +30,7 @@ class HomeFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        val rootView: View = inflater.inflate(R.layout.fragment_browse, container, false)
+        val root: View = inflater.inflate(R.layout.fragment_browse, container, false)
 
         itemList.add("Assorted T-shirts")
         itemList.add("Assorted T-shirts")
@@ -40,10 +40,18 @@ class HomeFragment : Fragment() {
         itemList.add("Assorted T-shirts")
         itemList.add("Assorted T-shirts")
         itemList.add("Assorted T-shirts")
+        itemList.add("Assorted T-shirts")
+        itemList.add("Assorted T-shirts")
+        itemList.add("Assorted T-shirts")
+        itemList.add("Assorted T-shirts")
+        itemList.add("Assorted T-shirts")
+        itemList.add("Assorted T-shirts")
+        itemList.add("Assorted T-shirts")
+        itemList.add("Assorted T-shirts")
 
-        recyclerViewItemList = rootView.findViewById(R.id.recyclerViewItemList)
+        recyclerViewItemList = root.findViewById(R.id.recyclerViewItemList)
         recyclerViewItemList.layoutManager = GridLayoutManager(activity, 2, RecyclerView.VERTICAL, false)
         recyclerViewItemList.adapter = ItemListAdapter(itemList)
-        return rootView
+        return root
     }
 }
