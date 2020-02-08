@@ -8,4 +8,5 @@
     <color name="pink">#ff4da6</color>
     <color name="onSurface">#60000000</color>
     <color name="light_gray">#E6E6E6</color>
+    <color name="dark_gray">#333333</color>
 </resources>

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:clipToPadding="true"
     android:orientation="vertical"
+    android:paddingBottom="?android:attr/actionBarSize"
     tools:context=".ui.category.CategoryFragment">
 
     <androidx.core.widget.NestedScrollView
@@ -19,127 +20,215 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingTop="0pt">
+            android:padding="16sp"
+            android:orientation="vertical">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/bookCard"
+                android:id="@+id/categoryClothes"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
+                android:layout_marginBottom="10sp"
                 android:clickable="true"
                 android:focusable="auto"
                 android:visibility="visible"
                 app:cardCornerRadius="2dp">
 
                 <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/imageViewClothes"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:contentDescription="BOOKS"
+                    android:contentDescription="@string/clothes"
+                    android:fadingEdge="horizontal"
+                    android:fadingEdgeLength="120dp"
+                    android:scaleX="2"
+                    android:src="@drawable/clothes" />
+
+                <TextView
+                    android:id="@+id/textViewClothes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:padding="10sp"
+                    android:background="@drawable/background_outline_rect"
+                    android:text="@string/clothes"
+                    android:textColor="@color/dark_gray"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/categoryShoes"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="10sp"
+                android:clickable="true"
+                android:focusable="auto"
+                android:visibility="visible"
+                app:cardCornerRadius="2dp">
+
+                <ImageView
+                    android:id="@+id/imageViewShoes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/shoes"
+                    android:fadingEdge="horizontal"
+                    android:fadingEdgeLength="120dp"
+                    android:scaleX="2"
+                    android:src="@drawable/shoes" />
+
+                <TextView
+                    android:id="@+id/textViewShoes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:padding="10sp"
+                    android:background="@drawable/background_outline_rect"
+                    android:text="@string/shoes"
+                    android:textColor="@color/dark_gray"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/categoryBags"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="10sp"
+                android:clickable="true"
+                android:focusable="auto"
+                android:visibility="visible"
+                app:cardCornerRadius="2dp">
+
+                <ImageView
+                    android:id="@+id/imageViewBags"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/bags"
+                    android:fadingEdge="horizontal"
+                    android:fadingEdgeLength="120dp"
+                    android:scaleX="2"
+                    android:src="@drawable/bags" />
+
+                <TextView
+                    android:id="@+id/textViewBags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:padding="10sp"
+                    android:background="@drawable/background_outline_rect"
+                    android:text="@string/bags"
+                    android:textColor="@color/dark_gray"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/categoryBooks"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginBottom="10sp"
+                android:clickable="true"
+                android:focusable="auto"
+                android:visibility="visible"
+                app:cardCornerRadius="2dp">
+
+                <ImageView
+                    android:id="@+id/imageViewBook"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/books"
                     android:fadingEdge="horizontal"
                     android:fadingEdgeLength="120dp"
                     android:scaleX="2"
                     android:src="@drawable/book" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/textViewBooks"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="TextView" />
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:padding="10sp"
+                    android:background="@drawable/background_outline_rect"
+                    android:text="@string/books"
+                    android:textColor="@color/dark_gray"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/spacerCard3"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                app:cardBackgroundColor="#FFFFFF" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/furnitureCard"
+                android:id="@+id/categoryFurniture"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
-                app:cardBackgroundColor="#C53232">
+                android:layout_marginBottom="10sp"
+                android:clickable="true"
+                android:focusable="auto"
+                android:visibility="visible"
+                app:cardCornerRadius="2dp">
 
                 <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="FURNITURE"
+                    android:id="@+id/imageViewFurniture"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/furniture"
+                    android:fadingEdge="horizontal"
+                    android:fadingEdgeLength="120dp"
                     android:scaleX="2"
                     android:src="@drawable/furniture" />
-            </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/spacerCard1"
-                android:layout_width="match_parent"
-                android:layout_height="20dp">
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/cat1Card"
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
-                app:cardBackgroundColor="#BA2AB3A4" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/spacerCard2"
-                android:layout_width="match_parent"
-                android:layout_height="20dp">
+                <TextView
+                    android:id="@+id/textViewFurniture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:padding="10sp"
+                    android:background="@drawable/background_outline_rect"
+                    android:text="@string/furniture"
+                    android:textColor="@color/dark_gray"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cat2Card"
+                android:id="@+id/categoryElectronicDevices"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
-                app:cardBackgroundColor="#CC1414">
+                android:layout_marginBottom="10sp"
+                android:clickable="true"
+                android:focusable="auto"
+                android:visibility="visible"
+                app:cardCornerRadius="2dp">
+
+                <ImageView
+                    android:id="@+id/imageViewElectronicDevices"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/electronic_devices"
+                    android:fadingEdge="horizontal"
+                    android:fadingEdgeLength="120dp"
+                    android:scaleX="2"
+                    android:src="@drawable/electronic_devices" />
+
+                <TextView
+                    android:id="@+id/textViewElectronicDevices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:padding="10sp"
+                    android:background="@drawable/background_outline_rect"
+                    android:text="@string/electronic_devices"
+                    android:textColor="@color/dark_gray"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
 
             </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/spacerCard"
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
-                app:cardBackgroundColor="#2196F3" />
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
-                app:cardBackgroundColor="#2196F3" />
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
-                app:cardBackgroundColor="#2196F3" />
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
-                app:cardBackgroundColor="#2196F3" />
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="20dp" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="140dp"
-                app:cardBackgroundColor="#2196F3" />
 
         </LinearLayout>
+
     </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

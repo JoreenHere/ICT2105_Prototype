@@ -29,11 +29,11 @@ class CategoryFragment : Fragment() {
     ): View? {
 
         val root = inflater.inflate(R.layout.fragment_category, container, false)
-        val imageV: ImageView = root.findViewById(R.id.imageView2)
-        val cardView:CardView = root.findViewById(R.id.bookCard)
-        cardView.setOnClickListener {
-            imageV.visibility = View.INVISIBLE
-        }
+//        val imageV: ImageView = root.findViewById(R.id.imageView2)
+//        val cardView:CardView = root.findViewById(R.id.bookCard)
+//        cardView.setOnClickListener {
+//            imageV.visibility = View.INVISIBLE
+//        }
 
         return root
     }

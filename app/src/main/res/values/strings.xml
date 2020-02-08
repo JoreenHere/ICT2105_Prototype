@@ -30,4 +30,9 @@
     <string name="default_bio">This is my bio</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="books">Books</string>
+    <string name="furniture">Furniture</string>
+    <string name="electronic_devices">Electronic Devices</string>
+    <string name="clothes">Clothes</string>
+    <string name="shoes">Shoes</string>
+    <string name="bags">Bags</string>
 </resources>

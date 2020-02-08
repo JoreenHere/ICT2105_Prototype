@@ -34,11 +34,12 @@ class AddListingActivity : AppCompatActivity() {
     }
 
     private fun addCategory(){
-        categoryList.add("Books")
-        categoryList.add("Papers")
-        categoryList.add("Furniture")
         categoryList.add("Clothes")
-        categoryList.add("Electronic Devices")
+        categoryList.add("Shoes")
         categoryList.add("Bags")
+        categoryList.add("Books")
+        categoryList.add("Furniture")
+        categoryList.add("Electronic Devices")
+
     }
 }
