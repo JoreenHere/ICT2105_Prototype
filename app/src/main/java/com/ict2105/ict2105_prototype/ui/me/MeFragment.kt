@@ -1,6 +1,7 @@
 package com.ict2105.ict2105_prototype.ui.me
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -12,6 +13,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.ict2105.ict2105_prototype.EditProfileActivity
 import com.ict2105.ict2105_prototype.ItemListAdapter
 import com.ict2105.ict2105_prototype.R
 
@@ -109,6 +111,8 @@ class MeFragment : Fragment() {
             ViewModelProviders.of(this).get(MeViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_me, container, false)
         val textView1: TextView = root.findViewById(R.id.textViewUsername)
+        val btnEdit: Button = root.findViewById(R.id.btnEdit)
+
         meViewModel.text1.observe(viewLifecycleOwner, Observer {
             textView1.text = it
         })
@@ -126,21 +130,10 @@ class MeFragment : Fragment() {
         recyclerViewItemList.layoutManager = GridLayoutManager(activity, 2, RecyclerView.VERTICAL, false)
         recyclerViewItemList.adapter = ItemListAdapter(itemList, root.context)
 
-
-
-//        val rating: RatingBar = root.findViewById(R.id.userRatingBar)
-//        rating.rating = 3.0f
-
-//        gv = root.findViewById(R.id.listingGridView) as GridView
-//
-//        adapter = CustomAdapter(activity!!,data)
-//        gv.adapter=adapter
-
-        //testing on how to use the view shit
-//        val button: Button = root.findViewById(R.id.button)
-//        button.setOnClickListener{
-//            button.setBackgroundColor(getResources().getColor(R.color.black))
-//        }
+        btnEdit.setOnClickListener {
+            val intent = Intent(activity, EditProfileActivity::class.java)
+            startActivity(intent)
+        }
 
         return root
     }

@@ -16,6 +16,7 @@
     <string name="title_chat">Chat</string>
     <string name="title_vert_menu">Vertical Menu</string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="title_save">Save</string>
     <string name="item_name">Item Name</string>
     <string name="item_detail">Item Details</string>
     <string name="item_condition">Item Condition</string>
@@ -29,10 +30,14 @@
     <string name="meet_up">Meet-Up @</string>
     <string name="default_bio">This is my bio</string>
     <string name="edit_profile">Edit Profile</string>
+    <string name="bio">Bio</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone_number">Phone Number</string>
     <string name="books">Books</string>
     <string name="furniture">Furniture</string>
     <string name="electronic_devices">Electronic Devices</string>
     <string name="clothes">Clothes</string>
     <string name="shoes">Shoes</string>
     <string name="bags">Bags</string>
+    <string name="change_photo">Change Profile Photo</string>
 </resources>

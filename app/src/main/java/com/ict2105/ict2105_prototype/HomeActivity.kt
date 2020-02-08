@@ -21,10 +21,6 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-//        val toolbar: Toolbar = findViewById(R.id.toolbar)
-//        setSupportActionBar(toolbar)
-//        supportActionBar?.setDisplayShowTitleEnabled(false)
-
         val fbtnAddListing: FloatingActionButton = findViewById(R.id.fbtnAddListing)
 
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
