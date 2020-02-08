@@ -26,8 +26,8 @@ class EditProfileActivity : AppCompatActivity() {
         // Handle action bar item clicks here.
         val id = item.getItemId()
 
-        if (id == R.id.action_chat) {
-            Toast.makeText(this, "Item One Clicked", Toast.LENGTH_LONG).show()
+        if (id == R.id.action_save) {
+            Toast.makeText(this, "Saved", Toast.LENGTH_LONG).show()
             return true
         }
         return super.onOptionsItemSelected(item)
