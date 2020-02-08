@@ -19,11 +19,14 @@
     <string name="item_name">Item Name</string>
     <string name="item_detail">Item Details</string>
     <string name="item_condition">Item Condition</string>
+    <string name="condition">Item Condition:</string>
+    <string name="detail">Item Details:</string>
     <string name="list_it">List It</string>
     <string name="radio_new">New</string>
     <string name="radio_used">Used</string>
     <string name="preferred_location">Preferred Meet-Up</string>
     <string name="location">Location</string>
+    <string name="meet_up">Meet-Up @</string>
     <string name="default_bio">This is my bio</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="books">Books</string>

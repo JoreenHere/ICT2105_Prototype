@@ -124,7 +124,7 @@ class MeFragment : Fragment() {
         recyclerViewItemList = root.findViewById(R.id.recyclerViewItemList)
         recyclerViewItemList.isNestedScrollingEnabled = false
         recyclerViewItemList.layoutManager = GridLayoutManager(activity, 2, RecyclerView.VERTICAL, false)
-        recyclerViewItemList.adapter = ItemListAdapter(itemList)
+        recyclerViewItemList.adapter = ItemListAdapter(itemList, root.context)
 
 
 

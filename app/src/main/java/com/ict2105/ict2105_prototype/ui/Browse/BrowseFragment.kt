@@ -41,17 +41,10 @@ class HomeFragment : Fragment() {
         itemList.add("Assorted T-shirts")
         itemList.add("Assorted T-shirts")
         itemList.add("Assorted T-shirts")
-        itemList.add("Assorted T-shirts")
-        itemList.add("Assorted T-shirts")
-        itemList.add("Assorted T-shirts")
-        itemList.add("Assorted T-shirts")
-        itemList.add("Assorted T-shirts")
-        itemList.add("Assorted T-shirts")
-        itemList.add("Assorted T-shirts")
 
         recyclerViewItemList = root.findViewById(R.id.recyclerViewItemList)
         recyclerViewItemList.layoutManager = GridLayoutManager(activity, 2, RecyclerView.VERTICAL, false)
-        recyclerViewItemList.adapter = ItemListAdapter(itemList)
+        recyclerViewItemList.adapter = ItemListAdapter(itemList, root.context)
         return root
     }
 }

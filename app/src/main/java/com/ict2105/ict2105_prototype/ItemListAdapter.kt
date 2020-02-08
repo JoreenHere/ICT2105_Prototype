@@ -11,15 +11,24 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.category_list_item.view.*
 import kotlinx.android.synthetic.main.item_card.view.*
 
-class ItemListAdapter (private val itemList : ArrayList<String>): RecyclerView.Adapter<ItemListAdapter.ItemViewHolder>(){
+class ItemListAdapter (private val itemList : ArrayList<String>, private val context: Context): RecyclerView.Adapter<ItemListAdapter.ItemViewHolder>(){
 
-    class ItemViewHolder(view: View) : RecyclerView.ViewHolder(view){
+    class ItemViewHolder(view: View, private val context: Context) : RecyclerView.ViewHolder(view), View.OnClickListener{
         val itemName: TextView = view.textViewItemName
+
+        init{
+            view.setOnClickListener(this)
+        }
+
+        override fun onClick(v: View?) {
+            val intent = Intent(context, ViewItemDetailsActivity::class.java)
+            context.startActivity(intent)
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_card, parent, false)
-        return ItemViewHolder(view)
+        return ItemViewHolder(view, context)
     }
 
     override fun getItemCount() = itemList.size
