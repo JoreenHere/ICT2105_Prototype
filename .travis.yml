@@ -54,3 +54,6 @@ before_script:
 # for integration into Slack 
 notifications:
   slack: ict2105:GrTXvXZsIHOHnLX5VvKIFOHJ
+  
+before_install:
+  - chmod +x gradlew
