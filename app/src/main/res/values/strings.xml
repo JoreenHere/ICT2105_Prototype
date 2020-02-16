@@ -17,6 +17,7 @@
     <string name="title_vert_menu">Vertical Menu</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_save">Save</string>
+    <string name="title_request">Request</string>
     <string name="item_name">Item Name</string>
     <string name="item_detail">Item Details</string>
     <string name="item_condition">Item Condition</string>
@@ -28,6 +29,8 @@
     <string name="preferred_location">Preferred Meet-Up</string>
     <string name="location">Location</string>
     <string name="meet_up">Meet-Up @</string>
+    <string name="pick_up">Pick-Up @</string>
+    <string name="pick_up_from">Pick-Up From: </string>
     <string name="default_bio">This is my bio</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="bio">Bio</string>
@@ -40,4 +43,6 @@
     <string name="shoes">Shoes</string>
     <string name="bags">Bags</string>
     <string name="change_photo">Change Profile Photo</string>
+    <string name="request_assistance">Request Assistance</string>
+    <string name="accept">Accept</string>
 </resources>

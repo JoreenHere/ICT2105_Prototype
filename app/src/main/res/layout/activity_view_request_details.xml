@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".ViewRequestDetailsActivity">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/scrollViewItemDetails"
@@ -20,7 +20,7 @@
             <com.synnapps.carouselview.CarouselView
                 android:id="@+id/carouselView"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
+                android:layout_height="345dp"
                 app:fillColor="#FFFFFFFF"
                 app:pageColor="#00000000"
                 app:radius="6dp"
@@ -100,11 +100,11 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textViewPreferredLocation"
+                        android:id="@+id/textViewPickUpLocation"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="10sp"
-                        android:text="@string/meet_up"
+                        android:text="@string/pick_up"
                         android:textSize="15sp" />
 
                     <TextView
@@ -112,6 +112,29 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/location"
+                        android:textSize="15sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16sp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewPickUpFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10sp"
+                        android:text="@string/pick_up_from"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/textViewUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/username"
                         android:textSize="15sp"/>
 
                 </LinearLayout>
@@ -137,41 +160,21 @@
             android:layout_height="1dp"
             android:background="@color/light_gray"/>
 
-        <LinearLayout
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAccept"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
-            android:orientation="horizontal">
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnChat"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="20sp"
-                android:text="@string/title_chat"
-                android:textColor="@color/pink"
-                android:textSize="15sp"
-                app:backgroundTint="@color/white"
-                app:strokeColor="@color/pink"
-                app:strokeWidth="2dp" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnRequest"
-                style="@style/Widget.AppCompat.Button.Colored"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="20sp"
-                android:layout_gravity="right"
-                android:text="@string/title_request"
-                android:textColor="@color/white"
-                android:textSize="15sp"
-                app:backgroundTint="@color/pink"
-                app:strokeColor="@color/pink"
-                app:strokeWidth="2dp" />
-
-        </LinearLayout>
+            android:layout_marginEnd="20sp"
+            android:text="@string/accept"
+            android:textColor="@color/pink"
+            android:textSize="15sp"
+            app:backgroundTint="@color/white"
+            app:strokeColor="@color/pink"
+            app:strokeWidth="2dp" />
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout >
+
+</androidx.constraintlayout.widget.ConstraintLayout>
